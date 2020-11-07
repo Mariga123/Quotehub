@@ -7,13 +7,8 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 8px 0;
+  h5{
+    margin-bottom: 40px;
   }
 
   p {
