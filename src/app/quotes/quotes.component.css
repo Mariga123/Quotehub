@@ -45,7 +45,7 @@
     height: 40px;
     margin: 0 16px;
   }
-  img {
+  .images {
     border-radius: 60%;
     width: 4.5%;
   }
@@ -53,6 +53,9 @@
     font-size: 65px;
     font-style: italic;
     font-family: 'Dancing Script', cursive;
+  }
+  .jumbotron{
+    margin:70px;
   }
 
   .toolbar #twitter-logo:hover {
