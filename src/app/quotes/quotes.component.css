@@ -23,6 +23,11 @@
   .spacer {
     flex: 1;
   }
+  small{
+    font-family: 'Dancing Script', cursive;
+    color:black;
+    font-size: 20px;
+  }
 
   .toolbar {
     position: absolute;
@@ -52,8 +57,12 @@
   .quote {
     font-size: 65px;
     font-style: italic;
-    font-family: 'Dancing Script', cursive;
   }
+  button:hover{
+    color: green;
+    font-family: 'Paytone One', sans-serif;
+  }
+  
   .jumbotron{
     margin:70px;
   }
@@ -61,4 +70,3 @@
   .toolbar #twitter-logo:hover {
     opacity: 0.8;
   }
-  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
