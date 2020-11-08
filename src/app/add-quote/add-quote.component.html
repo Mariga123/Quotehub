@@ -1,11 +1,15 @@
-<h1>my goal works</h1>
-<div class="row">
-    <div class="col-sm-6">
-        <div *ngFor='let quote of quote; let i = index'>
-            <h1>{{ quote.title }}</h1>
-            <p>{{ quote.description }}</p>
-            <!-- <a class="btn btn-sm btn-block btn-success">show Quote authors and dates published</a> -->
-            <app-add-quote-details [quote]='quote' (isComplete) ='completeQuote($event, i)'></app-add-quote-details>
+<div class="container">
+    <h1>my goal works</h1>
+    <div class="row">
+        <div class="col-sm-6">
+            <div *ngFor='let quote of quote; let i = index'>
+                <h1>{{ quote.title }}</h1>
+                <p>{{ quote.description }}</p>
+                <app-add-quote-details [quote]='quote' (isComplete)='completeQuote($event, i)'></app-add-quote-details>
+            </div>
         </div>
+    </div>
+    <div *ngIf='quote.length < 1' class='alert alert-warning'>
+        No Quotes Available For Now
     </div>
 </div>
