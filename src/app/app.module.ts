@@ -16,7 +16,7 @@ import { AddQuoteDetailsComponent } from './add-quote-details/add-quote-details.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

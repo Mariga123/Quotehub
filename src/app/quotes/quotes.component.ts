@@ -9,7 +9,8 @@ export class QuotesComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  // tslint:disable-next-line: typedef
+  ngOnInit() {
   }
 
 }
