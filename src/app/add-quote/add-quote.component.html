@@ -7,9 +7,12 @@
                 <p>{{ quote.description }}</p>
                 <app-add-quote-details [quote]='quote' (isComplete)='completeQuote($event, i)'></app-add-quote-details>
             </div>
+            <div *ngIf='quote.length < 1' class='alert alert-warning'>
+                No Quotes Available For Now
+            </div>
         </div>
-    </div>
-    <div *ngIf='quote.length < 1' class='alert alert-warning'>
-        No Quotes Available For Now
+        <div class="col-sm-6">
+            <app-form></app-form>
+        </div>
     </div>
 </div>
