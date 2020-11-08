@@ -15,6 +15,10 @@ export class AddQuoteComponent implements OnInit {
     new Quotes('In seeking happiness for others, you will find it in yourself.', 'Don’t search for what you’re passionate about, serve others to make yourself passionate.', 'John mariga', '01/02/2221'),
 
   ];
+  // tslint:disable-next-line: typedef
+  toggleDetails(index) {
+    this.quote[index].showDescription = !this.quote[index].showDescription;
+  }
   constructor() { }
 
   // tslint:disable-next-line: typedef
