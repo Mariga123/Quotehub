@@ -9,10 +9,10 @@ import { Component, OnInit } from '@angular/core';
 export class AddQuoteComponent implements OnInit {
 
   quote: Quotes[] = [
-    new Quotes('You must be the change you wish to see in the world.', 'Live for what’s worth dying for, and leverage technology to create the world you wish to see.', 'Gandhi', new Date(2000, 1, 15)),
-    new Quotes('A life spent making mistakes is not only more honorable, but more useful than a life spent doing nothing.', 'Experiments are necessary for the experiences that create growth and new opportunities.', 'George Bernhard Shaw', new Date(2010, 6, 21)),
-    new Quotes('Love is a verb. Love — the feeling — is a fruit of love, the verb.', 'Love has been mistaken for possession and attachment. Become loving, so you can love all', 'Stephen Covey', new Date(2020, 7, 25)),
-    new Quotes('In seeking happiness for others, you will find it in yourself.', 'Don’t search for what you’re passionate about, serve others to make yourself passionate.', 'John mariga', new Date(2014, 5, 15)),
+    new Quotes('You must be the change you wish to see in the world.', 'Live for what’s worth dying for, and leverage technology to create the world you wish to see.', 'Gandhi', new Date(2022, 1, 15)),
+    new Quotes('A life spent making mistakes is not only more honorable, but more useful than a life spent doing nothing.', 'Experiments are necessary for the experiences that create growth and new opportunities.', 'George Bernhard Shaw', new Date(2023, 6, 21)),
+    new Quotes('Love is a verb. Love — the feeling — is a fruit of love, the verb.', 'Love has been mistaken for possession and attachment. Become loving, so you can love all', 'Stephen Covey', new Date(2034, 7, 25)),
+    new Quotes('In seeking happiness for others, you will find it in yourself.', 'Don’t search for what you’re passionate about, serve others to make yourself passionate.', 'John mariga', new Date(2024, 5, 15)),
 
   ];
 
