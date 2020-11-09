@@ -1,17 +1,22 @@
 <div class="container">
-    <h1>my goal works</h1>
+    <h2>BE INSPIRED BY OUR QUOTES</h2><br>
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-12">
             <div *ngFor='let quote of quote; let i = index'>
                 <h1>{{ quote.title }}</h1>
                 <p>{{ quote.description }}</p>
                 <app-add-quote-details [quote]='quote' (isComplete)='completeQuote($event, i)'></app-add-quote-details>
+                <button (click)='like(i)'>LIKE: {{ quote.like }}</button>
+                <button (click)='dislike(i)'>DISLIKE: {{ quote.dislike }}</button>
             </div>
             <div *ngIf='quote.length < 1' class='alert alert-warning'>
                 No Quotes Available For Now
             </div>
         </div>
-        <div class="col-sm-6">
+    </div>
+    <br>
+    <div class="jumbotron">
+        <div class="col-sm-12">
             <app-form (addQuote)="addNewQuotes($event)"></app-form>
         </div>
     </div>
