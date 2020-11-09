@@ -25,6 +25,15 @@ export class AddQuoteComponent implements OnInit {
   }
 
   // tslint:disable-next-line: typedef
+  like(index) {
+    this.quote[index].like++;
+  }
+  // tslint:disable-next-line: typedef
+  dislike(index) {
+    this.quote[index].dislike++;
+  }
+
+  // tslint:disable-next-line: typedef
   completeQuote(isComplete, index){
     if (isComplete){
       this.quote.splice(index, 1);
